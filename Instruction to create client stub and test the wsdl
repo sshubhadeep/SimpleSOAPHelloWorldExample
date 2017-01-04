@@ -1,0 +1,27 @@
+Please find the below steps to create a client application 
+to utilise and test the wsdl provided here for test. The 
+steps are applicable to any WTP (Web Tool Platform) version 
+of eclipse IDE.
+
+1. Save the wsdl to a location.
+2. Open Java EE perspective (should be default).
+3. File-> New-> Other-> Web Services-> Web Service Client and press next.
+4. In service definition select the downloaded wsdl file.
+5. Client Type-> Java Proxy
+6. Select slide bar till "Test Client".
+7. In Configuration, select the available runtime server (for example Tomcat v8.5 Server).
+8. In Configuration, select a web service runtime as well (for example Apache Axis).
+9. In Configuration, select a new Client Project (i.e, give a name to your client project
+such as SOAPExampleClient and select Dynamic Web Project as your client project type.
+10. Click Next and Next.
+11. Select only methods you want to test (for example in our case select sayHelloWorld() only)
+and click finish.
+12. Eclipse browser will open the TestClient.jsp page.
+13. Select the method sayHelloWorld() and enter your name in the input field.
+14. Click invoke to see the result below.
+
+This can be accessed through any external browser such as crome using the same url in 
+the eclipse screen. The url for our case would be 
+http://localhost:8080/SOAPExampleClient/sampleHelloWorldProxy/TestClient.jsp
+
+Please feel free to contact me on sshubhadeep@gmail.com for any issues while running and testing the wsdl file.
